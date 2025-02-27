@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 6565ea6141ea34a6f8b1b7ec81398f64
+timeCreated: 1480428892
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 77198
+  packageName: Unity Learn | Roll-A-Ball | Completed Project Files| URP
+  packageVersion: 2.0
+  assetPath: Assets/UnityTechnologies/RollABall/Scripts/PlayerController.cs
+  uploadId: 683321

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3a7e4781a15104fa8b7293853112780e
+timeCreated: 1480428610
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 77198
+  packageName: Unity Learn | Roll-A-Ball | Completed Project Files| URP
+  packageVersion: 2.0
+  assetPath: Assets/UnityTechnologies/RollABall/Materials/Background.mat
+  uploadId: 683321

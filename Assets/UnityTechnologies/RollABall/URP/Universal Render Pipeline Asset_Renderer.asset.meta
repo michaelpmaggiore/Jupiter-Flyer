@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 246b8f9ca39fd46c5b7dbe01921769b5
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 77198
+  packageName: Unity Learn | Roll-A-Ball | Completed Project Files| URP
+  packageVersion: 2.0
+  assetPath: Assets/UnityTechnologies/RollABall/URP/Universal Render Pipeline Asset_Renderer.asset
+  uploadId: 683321

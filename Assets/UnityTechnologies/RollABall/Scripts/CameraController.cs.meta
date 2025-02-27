@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: efe2a996ca3994480ae9c7b63aca3b86
+timeCreated: 1480429281
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 77198
+  packageName: Unity Learn | Roll-A-Ball | Completed Project Files| URP
+  packageVersion: 2.0
+  assetPath: Assets/UnityTechnologies/RollABall/Scripts/CameraController.cs
+  uploadId: 683321
