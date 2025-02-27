@@ -19,6 +19,16 @@
       "source": "registry",
       "testable": false
     },
+    "com.unity.burst@1.8.19": {
+      "name": "com.unity.burst",
+      "displayName": "Burst",
+      "resolvedPath": "C:\\Users\\lunat\\Ball\\Library\\PackageCache\\com.unity.burst@7a907cf5a459",
+      "fingerprint": "7a907cf5a4591e4e25f4203e3be84f240058c34d",
+      "editorCompatibility": "2020.3.0a1",
+      "version": "1.8.19",
+      "source": "registry",
+      "testable": false
+    },
     "com.unity.collab-proxy@2.7.1": {
       "name": "com.unity.collab-proxy",
       "displayName": "Version Control",
@@ -26,6 +36,26 @@
       "fingerprint": "50ac96531b6358586ccfdf8cc845939bf50d9fab",
       "editorCompatibility": "2021.3.0f1",
       "version": "2.7.1",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.collections@2.5.1": {
+      "name": "com.unity.collections",
+      "displayName": "Collections",
+      "resolvedPath": "C:\\Users\\lunat\\Ball\\Library\\PackageCache\\com.unity.collections@56bff8827a7e",
+      "fingerprint": "56bff8827a7ef6d44fcee4f36e558a74da89c1a0",
+      "editorCompatibility": "2022.3.11f1",
+      "version": "2.5.1",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.ext.nunit@2.0.5": {
+      "name": "com.unity.ext.nunit",
+      "displayName": "Custom NUnit",
+      "resolvedPath": "C:\\Users\\lunat\\Ball\\Library\\PackageCache\\com.unity.ext.nunit@60ef35ffd3cd",
+      "fingerprint": "60ef35ffd3cd5e2f5c8887a4a4ca6148854cd092",
+      "editorCompatibility": "2019.4.0a1",
+      "version": "2.0.5",
       "source": "registry",
       "testable": false
     },
@@ -59,6 +89,16 @@
       "source": "registry",
       "testable": false
     },
+    "com.unity.mathematics@1.3.2": {
+      "name": "com.unity.mathematics",
+      "displayName": "Mathematics",
+      "resolvedPath": "C:\\Users\\lunat\\Ball\\Library\\PackageCache\\com.unity.mathematics@8017b507cc74",
+      "fingerprint": "8017b507cc74bf0a1dd14b18aa860569f807314d",
+      "editorCompatibility": "2021.3.0a1",
+      "version": "1.3.2",
+      "source": "registry",
+      "testable": false
+    },
     "com.unity.multiplayer.center@1.0.0": {
       "name": "com.unity.multiplayer.center",
       "displayName": "Multiplayer Center",
@@ -66,6 +106,36 @@
       "fingerprint": "f3fb577b3546594b97b8cc34307cd621f60f1c73",
       "editorCompatibility": "6000.0.0a1",
       "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.nuget.mono-cecil@1.11.4": {
+      "name": "com.unity.nuget.mono-cecil",
+      "displayName": "Mono Cecil",
+      "resolvedPath": "C:\\Users\\lunat\\Ball\\Library\\PackageCache\\com.unity.nuget.mono-cecil@d6f9955a5d5f",
+      "fingerprint": "d6f9955a5d5f84d45442ff1ad0fb694cc6e2fd62",
+      "editorCompatibility": "2018.4.0a1",
+      "version": "1.11.4",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.probuilder@6.0.4": {
+      "name": "com.unity.probuilder",
+      "displayName": "ProBuilder",
+      "resolvedPath": "C:\\Users\\lunat\\Ball\\Library\\PackageCache\\com.unity.probuilder@a2827f523e21",
+      "fingerprint": "a2827f523e21ea251861dac290125410ba4e560b",
+      "editorCompatibility": "6000.0.0a1",
+      "version": "6.0.4",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.render-pipelines.core@17.0.3": {
+      "name": "com.unity.render-pipelines.core",
+      "displayName": "Core RP Library",
+      "resolvedPath": "C:\\Users\\lunat\\Ball\\Library\\PackageCache\\com.unity.render-pipelines.core@38fdc9b96878",
+      "fingerprint": "38fdc9b96878a2e6f6c44f4e2f8a9e68f7b5ce46",
+      "editorCompatibility": "6000.0.0a1",
+      "version": "17.0.3",
       "source": "builtin",
       "testable": false
     },
@@ -79,6 +149,36 @@
       "source": "builtin",
       "testable": false
     },
+    "com.unity.render-pipelines.universal-config@17.0.3": {
+      "name": "com.unity.render-pipelines.universal-config",
+      "displayName": "Universal RP Config",
+      "resolvedPath": "C:\\Users\\lunat\\Ball\\Library\\PackageCache\\com.unity.render-pipelines.universal-config@fa63c96d3e1a",
+      "fingerprint": "fa63c96d3e1af317d84d171cd6c0e0658ab159df",
+      "editorCompatibility": "6000.0.0a1",
+      "version": "17.0.3",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.rendering.light-transport@1.0.1": {
+      "name": "com.unity.rendering.light-transport",
+      "displayName": "Unity Light Transport Library",
+      "resolvedPath": "C:\\Users\\lunat\\Ball\\Library\\PackageCache\\com.unity.rendering.light-transport@307bc27a498f",
+      "fingerprint": "307bc27a498fc9cd409bbd426c85d8dc7f140bc1",
+      "editorCompatibility": "2023.3.0b1",
+      "version": "1.0.1",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.shadergraph@17.0.3": {
+      "name": "com.unity.shadergraph",
+      "displayName": "Shader Graph",
+      "resolvedPath": "C:\\Users\\lunat\\Ball\\Library\\PackageCache\\com.unity.shadergraph@afc42d8f5d23",
+      "fingerprint": "afc42d8f5d23516679001415ac5921fc5626e87e",
+      "editorCompatibility": "6000.0.0a1",
+      "version": "17.0.3",
+      "source": "builtin",
+      "testable": false
+    },
     "com.unity.test-framework@1.4.6": {
       "name": "com.unity.test-framework",
       "displayName": "Test Framework",
@@ -86,6 +186,16 @@
       "fingerprint": "5ac417e07314c8f6afba8109738c32b82d391e68",
       "editorCompatibility": "2019.4.1f1",
       "version": "1.4.6",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.test-framework.performance@3.0.3": {
+      "name": "com.unity.test-framework.performance",
+      "displayName": "Performance testing API",
+      "resolvedPath": "C:\\Users\\lunat\\Ball\\Library\\PackageCache\\com.unity.test-framework.performance@fb0dc592af8b",
+      "fingerprint": "fb0dc592af8b524f1a06c50d7caf95552f1bcd2f",
+      "editorCompatibility": "2020.3.0a1",
+      "version": "3.0.3",
       "source": "registry",
       "testable": false
     },
@@ -183,6 +293,14 @@
       "source": "builtin",
       "testable": false
     },
+    "com.unity.modules.hierarchycore@1.0.0": {
+      "name": "com.unity.modules.hierarchycore",
+      "displayName": "Hierarchy Core",
+      "resolvedPath": "A:\\Unity\\6000.0.39f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.hierarchycore",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
     "com.unity.modules.imageconversion@1.0.0": {
       "name": "com.unity.modules.imageconversion",
       "displayName": "Image Conversion",
@@ -235,6 +353,14 @@
       "name": "com.unity.modules.screencapture",
       "displayName": "Screen Capture",
       "resolvedPath": "A:\\Unity\\6000.0.39f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.screencapture",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.subsystems@1.0.0": {
+      "name": "com.unity.modules.subsystems",
+      "displayName": "Subsystems",
+      "resolvedPath": "A:\\Unity\\6000.0.39f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.subsystems",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -375,62 +501,6 @@
       "source": "builtin",
       "testable": false
     },
-    "com.unity.modules.subsystems@1.0.0": {
-      "name": "com.unity.modules.subsystems",
-      "displayName": "Subsystems",
-      "resolvedPath": "A:\\Unity\\6000.0.39f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.subsystems",
-      "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
-    },
-    "com.unity.modules.hierarchycore@1.0.0": {
-      "name": "com.unity.modules.hierarchycore",
-      "displayName": "Hierarchy Core",
-      "resolvedPath": "A:\\Unity\\6000.0.39f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.hierarchycore",
-      "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
-    },
-    "com.unity.ext.nunit@2.0.5": {
-      "name": "com.unity.ext.nunit",
-      "displayName": "Custom NUnit",
-      "resolvedPath": "C:\\Users\\lunat\\Ball\\Library\\PackageCache\\com.unity.ext.nunit@60ef35ffd3cd",
-      "fingerprint": "60ef35ffd3cd5e2f5c8887a4a4ca6148854cd092",
-      "editorCompatibility": "2019.4.0a1",
-      "version": "2.0.5",
-      "source": "registry",
-      "testable": false
-    },
-    "com.unity.render-pipelines.core@17.0.3": {
-      "name": "com.unity.render-pipelines.core",
-      "displayName": "Core RP Library",
-      "resolvedPath": "C:\\Users\\lunat\\Ball\\Library\\PackageCache\\com.unity.render-pipelines.core@38fdc9b96878",
-      "fingerprint": "38fdc9b96878a2e6f6c44f4e2f8a9e68f7b5ce46",
-      "editorCompatibility": "6000.0.0a1",
-      "version": "17.0.3",
-      "source": "builtin",
-      "testable": false
-    },
-    "com.unity.shadergraph@17.0.3": {
-      "name": "com.unity.shadergraph",
-      "displayName": "Shader Graph",
-      "resolvedPath": "C:\\Users\\lunat\\Ball\\Library\\PackageCache\\com.unity.shadergraph@afc42d8f5d23",
-      "fingerprint": "afc42d8f5d23516679001415ac5921fc5626e87e",
-      "editorCompatibility": "6000.0.0a1",
-      "version": "17.0.3",
-      "source": "builtin",
-      "testable": false
-    },
-    "com.unity.render-pipelines.universal-config@17.0.3": {
-      "name": "com.unity.render-pipelines.universal-config",
-      "displayName": "Universal RP Config",
-      "resolvedPath": "C:\\Users\\lunat\\Ball\\Library\\PackageCache\\com.unity.render-pipelines.universal-config@fa63c96d3e1a",
-      "fingerprint": "fa63c96d3e1af317d84d171cd6c0e0658ab159df",
-      "editorCompatibility": "6000.0.0a1",
-      "version": "17.0.3",
-      "source": "builtin",
-      "testable": false
-    },
     "com.unity.searcher@4.9.3": {
       "name": "com.unity.searcher",
       "displayName": "Searcher",
@@ -441,63 +511,13 @@
       "source": "registry",
       "testable": false
     },
-    "com.unity.burst@1.8.19": {
-      "name": "com.unity.burst",
-      "displayName": "Burst",
-      "resolvedPath": "C:\\Users\\lunat\\Ball\\Library\\PackageCache\\com.unity.burst@7a907cf5a459",
-      "fingerprint": "7a907cf5a4591e4e25f4203e3be84f240058c34d",
-      "editorCompatibility": "2020.3.0a1",
-      "version": "1.8.19",
-      "source": "registry",
-      "testable": false
-    },
-    "com.unity.mathematics@1.3.2": {
-      "name": "com.unity.mathematics",
-      "displayName": "Mathematics",
-      "resolvedPath": "C:\\Users\\lunat\\Ball\\Library\\PackageCache\\com.unity.mathematics@8017b507cc74",
-      "fingerprint": "8017b507cc74bf0a1dd14b18aa860569f807314d",
-      "editorCompatibility": "2021.3.0a1",
-      "version": "1.3.2",
-      "source": "registry",
-      "testable": false
-    },
-    "com.unity.collections@2.5.1": {
-      "name": "com.unity.collections",
-      "displayName": "Collections",
-      "resolvedPath": "C:\\Users\\lunat\\Ball\\Library\\PackageCache\\com.unity.collections@56bff8827a7e",
-      "fingerprint": "56bff8827a7ef6d44fcee4f36e558a74da89c1a0",
-      "editorCompatibility": "2022.3.11f1",
-      "version": "2.5.1",
-      "source": "registry",
-      "testable": false
-    },
-    "com.unity.rendering.light-transport@1.0.1": {
-      "name": "com.unity.rendering.light-transport",
-      "displayName": "Unity Light Transport Library",
-      "resolvedPath": "C:\\Users\\lunat\\Ball\\Library\\PackageCache\\com.unity.rendering.light-transport@307bc27a498f",
-      "fingerprint": "307bc27a498fc9cd409bbd426c85d8dc7f140bc1",
-      "editorCompatibility": "2023.3.0b1",
-      "version": "1.0.1",
-      "source": "builtin",
-      "testable": false
-    },
-    "com.unity.nuget.mono-cecil@1.11.4": {
-      "name": "com.unity.nuget.mono-cecil",
-      "displayName": "Mono Cecil",
-      "resolvedPath": "C:\\Users\\lunat\\Ball\\Library\\PackageCache\\com.unity.nuget.mono-cecil@d6f9955a5d5f",
-      "fingerprint": "d6f9955a5d5f84d45442ff1ad0fb694cc6e2fd62",
+    "com.unity.settings-manager@2.0.1": {
+      "name": "com.unity.settings-manager",
+      "displayName": "Settings Manager",
+      "resolvedPath": "C:\\Users\\lunat\\Ball\\Library\\PackageCache\\com.unity.settings-manager@56a930affa1e",
+      "fingerprint": "56a930affa1e4462d3595b5c19a1c2a4bf2015d2",
       "editorCompatibility": "2018.4.0a1",
-      "version": "1.11.4",
-      "source": "registry",
-      "testable": false
-    },
-    "com.unity.test-framework.performance@3.0.3": {
-      "name": "com.unity.test-framework.performance",
-      "displayName": "Performance testing API",
-      "resolvedPath": "C:\\Users\\lunat\\Ball\\Library\\PackageCache\\com.unity.test-framework.performance@fb0dc592af8b",
-      "fingerprint": "fb0dc592af8b524f1a06c50d7caf95552f1bcd2f",
-      "editorCompatibility": "2020.3.0a1",
-      "version": "3.0.3",
+      "version": "2.0.1",
       "source": "registry",
       "testable": false
     }
