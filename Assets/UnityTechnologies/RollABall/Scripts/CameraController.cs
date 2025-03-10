@@ -23,6 +23,9 @@ public class CameraController : MonoBehaviour
         // Calculate the initial offset from the player to the camera
         initialOffset = transform.position - player.position;
         
+        // Make inital offset zero
+        //initialOffset = Vector3.zero;
+        
         // Optionally, initialize yaw and pitch based on current camera rotation
         yaw = transform.eulerAngles.y;
         pitch = transform.eulerAngles.x;
