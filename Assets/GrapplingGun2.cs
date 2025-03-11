@@ -44,9 +44,10 @@ public class GrapplingGun2 : MonoBehaviour
             joint.maxDistance = distanceFromPoint * 0.8f;
             joint.minDistance = distanceFromPoint * 0.25f;
 
-            joint.spring = 4.5f;
-            joint.damper = 7f;
-            joint.massScale = 4.5f;
+            // Grapple parameters
+            joint.spring = 5f; // Higher value means more pulling force
+            joint.damper = 4f; // Higher value means less springy effect
+            joint.massScale = 10f; // Higher value mean more player feels lighter, more force
 
             lr.positionCount = 2;
             lr.SetPosition(0, player.position);

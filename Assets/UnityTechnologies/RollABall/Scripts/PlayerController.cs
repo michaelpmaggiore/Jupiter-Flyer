@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour {
 	public float speed;
 	public Text countText;
 	public Text winText;
+	public Transform camera;
 
 	// Create private references to the rigidbody component on the player, and the count of pick up objects picked up so far
 	private Rigidbody rb;
@@ -33,19 +34,27 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	// Each physics step..
-	void FixedUpdate ()
-	{
-		//Set some local float variables equal to the value of our Horizontal and Vertical Inputs
-		// float moveHorizontal = Input.GetAxis ("Horizontal");
-		// float moveVertical = Input.GetAxis ("Vertical");
+	private void FixedUpdate()
+    {
+        float moveHorizontal = Input.GetAxis("Horizontal");
+        float moveVertical = Input.GetAxis("Vertical");
 
-		// // Create a Vector3 variable, and assign X and Z to feature our horizontal and vertical float variables above
-		// Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
+        // Get camera directions
+        Vector3 camForward = camera.forward;
+        Vector3 camRight = camera.right;
 
-		// // Add a physical force to our Player rigidbody using our 'movement' Vector3 above, 
-		// // multiplying it by 'speed' - our public player speed that appears in the inspector
-		// rb.AddForce (movement * speed);
-	}
+        // Flatten the vectors to prevent unwanted vertical movement
+        camForward.y = 0;
+        camRight.y = 0;
+        camForward.Normalize();
+        camRight.Normalize();
+
+        // Calculate movement direction relative to camera
+        Vector3 movement = (camForward * moveVertical + camRight * moveHorizontal).normalized;
+
+        // Apply force to roll the ball
+        rb.AddForce(movement * speed, ForceMode.Acceleration);
+    }
 
 	// When this game object intersects a collider with 'is trigger' checked, 
 	// store a reference to that collider in a variable named 'other'..
