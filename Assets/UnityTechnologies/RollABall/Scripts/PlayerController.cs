@@ -17,6 +17,9 @@ public class PlayerController : MonoBehaviour {
 	private Rigidbody rb;
 	private int count;
 
+	private bool isGrounded = false;
+	public float jumpForce = 50000f; // Adjust for higher/lower jumps
+
 	// At the start of the game..
 	void Start ()
 	{
@@ -54,6 +57,14 @@ public class PlayerController : MonoBehaviour {
 
         // Apply force to roll the ball
         rb.AddForce(movement * speed, ForceMode.Acceleration);
+
+		// Jump if space is pressed and the ball is on the ground
+        if (Input.GetKey(KeyCode.Space) && isGrounded)
+        {
+			rb.linearVelocity = new Vector3(rb.linearVelocity.x, rb.linearVelocity.y + jumpForce, rb.linearVelocity.z);
+            //rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            isGrounded = false; // Prevent double jumping
+        }
     }
 
 	// When this game object intersects a collider with 'is trigger' checked, 
@@ -87,4 +98,22 @@ public class PlayerController : MonoBehaviour {
 			winText.text = "You Win!";
 		}
 	}
+
+	// Detect ground contact
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground")) // Make sure ground objects have the "Ground" tag
+        {
+            isGrounded = true;
+        }
+    }
+
+    // Detect leaving the ground
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = false;
+        }
+    }
 }
