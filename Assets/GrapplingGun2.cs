@@ -31,7 +31,7 @@ public class GrapplingGun2 : MonoBehaviour
     {
         RaycastHit hit;
         float maxDistance = 1000f;
-        if (Physics.Raycast(camera.position, camera.forward, out hit, maxDistance, whatIsGrappleable))
+        if (Physics.Raycast(player.position, camera.forward, out hit, maxDistance, whatIsGrappleable))
         {
             grapplePoint = hit.point;
             joint = player.gameObject.AddComponent<SpringJoint>();
@@ -45,7 +45,7 @@ public class GrapplingGun2 : MonoBehaviour
             joint.minDistance = distanceFromPoint * 0.25f;
 
             // Grapple parameters
-            joint.spring = 5f; // Higher value means more pulling force
+            joint.spring = 10f; // Higher value means more pulling force
             joint.damper = 4f; // Higher value means less springy effect
             joint.massScale = 10f; // Higher value mean more player feels lighter, more force
 

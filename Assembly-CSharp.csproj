@@ -67,8 +67,10 @@
     <Compile Include="Assets/UnityTechnologies/RollABall/Scripts/CameraController.cs" />
     <Compile Include="Assets/UnityTechnologies/RollABall/Scripts/PlayerController.cs" />
     <Compile Include="Assets/GrapplingGun2.cs" />
+    <Compile Include="Assets/Shooter.cs" />
     <Compile Include="Assets/GrapplingGun.cs" />
     <Compile Include="Assets/TutorialInfo/Scripts/Readme.cs" />
+    <Compile Include="Assets/DynamicSpeedTrail.cs" />
     <Compile Include="Assets/UnityTechnologies/RollABall/Scripts/Rotator.cs" />
   </ItemGroup>
   <ItemGroup>

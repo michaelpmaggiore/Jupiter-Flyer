@@ -1,0 +1,1 @@
+Temp/ScriptUpdater/1531983142/1407078141_DynamicSpeedTrail.cs => Assets/DynamicSpeedTrail.cs
