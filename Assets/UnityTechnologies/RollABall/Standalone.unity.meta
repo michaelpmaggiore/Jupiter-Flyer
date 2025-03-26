@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: aff9aaf8d4c68984c9a5334437caafd0
+timeCreated: 1514098848
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 107813
+  packageName: Game Menu Template
+  packageVersion: 1.0
+  assetPath: Assets/AlpacaStudio_Menu_Template/Examples/Standalone.unity
+  uploadId: 220605

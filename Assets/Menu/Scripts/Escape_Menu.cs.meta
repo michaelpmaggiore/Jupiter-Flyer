@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: e4de0dd9198a9544bbe7db7ec88f5c73
+timeCreated: 1514103029
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 107813
+  packageName: Game Menu Template
+  packageVersion: 1.0
+  assetPath: Assets/AlpacaStudio_Menu_Template/Scripts/Escape_Menu.cs
+  uploadId: 220605

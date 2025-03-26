@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 7b327cf93e7a2e047bcde3fd0b96fbeb
+timeCreated: 1514132531
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 107813
+  packageName: Game Menu Template
+  packageVersion: 1.0
+  assetPath: Assets/AlpacaStudio_Menu_Template/Scripts/Music_Player.cs
+  uploadId: 220605
