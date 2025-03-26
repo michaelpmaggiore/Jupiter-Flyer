@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/UnityTechnologies/RollABall/Roll-a-ball.unity
+- path: Assets/UnityTechnologies/RollABall/Level.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

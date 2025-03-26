@@ -1,25 +1,25 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: /home/will/gamedev/Jupiter-Flyer/Packages/manifest.json
+    m_FilePath: C:/Users/lunat/Downloads/thisBALL/Jupiter-Flyer/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638767191550000000
-    m_Hash: 1732591328
+      ticks: 638785427285174455
+    m_Hash: 2364395654
   m_LockFileStatus:
-    m_FilePath: /home/will/gamedev/Jupiter-Flyer/Packages/packages-lock.json
+    m_FilePath: C:/Users/lunat/Downloads/thisBALL/Jupiter-Flyer/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638767191550000000
-    m_Hash: 3719921850
+      ticks: 638785427285174455
+    m_Hash: 3734076507
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
-m_ProjectPath: /home/will/gamedev/Jupiter-Flyer/Packages
+m_ProjectPath: C:/Users/lunat/Downloads/thisBALL/Jupiter-Flyer/Packages
 m_EditorVersion: 6000.0.39f1 (15ea7ed0b100)
 m_ResolvedPackages:
 - packageId: com.unity.ai.navigation@2.0.6
@@ -27,7 +27,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.6
   source: 1
-  resolvedPath: /home/will/gamedev/Jupiter-Flyer/Library/PackageCache/com.unity.ai.navigation@c74b2724ed42
+  resolvedPath: C:\Users\lunat\Downloads\thisBALL\Jupiter-Flyer\Library\PackageCache\com.unity.ai.navigation@c74b2724ed42
   assetPath: Packages/com.unity.ai.navigation
   name: com.unity.ai.navigation
   displayName: AI Navigation
@@ -143,7 +143,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.8.19
   source: 1
-  resolvedPath: /home/will/gamedev/Jupiter-Flyer/Library/PackageCache/com.unity.burst@7a907cf5a459
+  resolvedPath: C:\Users\lunat\Downloads\thisBALL\Jupiter-Flyer\Library\PackageCache\com.unity.burst@7a907cf5a459
   assetPath: Packages/com.unity.burst
   name: com.unity.burst
   displayName: Burst
@@ -367,7 +367,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.7.1
   source: 1
-  resolvedPath: /home/will/gamedev/Jupiter-Flyer/Library/PackageCache/com.unity.collab-proxy@50ac96531b63
+  resolvedPath: C:\Users\lunat\Downloads\thisBALL\Jupiter-Flyer\Library\PackageCache\com.unity.collab-proxy@50ac96531b63
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Version Control
@@ -551,7 +551,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.5.1
   source: 1
-  resolvedPath: /home/will/gamedev/Jupiter-Flyer/Library/PackageCache/com.unity.collections@56bff8827a7e
+  resolvedPath: C:\Users\lunat\Downloads\thisBALL\Jupiter-Flyer\Library\PackageCache\com.unity.collections@56bff8827a7e
   assetPath: Packages/com.unity.collections
   name: com.unity.collections
   displayName: Collections
@@ -638,10 +638,12 @@ m_ResolvedPackages:
     - 2.5.1
     - 2.5.2
     - 2.5.3
+    - 2.6.0-exp.2
     compatible:
     - 2.5.1
     - 2.5.2
     - 2.5.3
+    - 2.6.0-exp.2
     recommended: 2.5.3
     deprecated: []
   dependencies:
@@ -721,7 +723,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.5
   source: 1
-  resolvedPath: /home/will/gamedev/Jupiter-Flyer/Library/PackageCache/com.unity.ext.nunit@60ef35ffd3cd
+  resolvedPath: C:\Users\lunat\Downloads\thisBALL\Jupiter-Flyer\Library\PackageCache\com.unity.ext.nunit@60ef35ffd3cd
   assetPath: Packages/com.unity.ext.nunit
   name: com.unity.ext.nunit
   displayName: Custom NUnit
@@ -800,7 +802,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 3.0.31
   source: 1
-  resolvedPath: /home/will/gamedev/Jupiter-Flyer/Library/PackageCache/com.unity.ide.rider@7921be93db40
+  resolvedPath: C:\Users\lunat\Downloads\thisBALL\Jupiter-Flyer\Library\PackageCache\com.unity.ide.rider@7921be93db40
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -860,10 +862,12 @@ m_ResolvedPackages:
     - 3.0.28
     - 3.0.31
     - 3.0.34
+    - 3.0.35
     compatible:
     - 3.0.31
     - 3.0.34
-    recommended: 3.0.34
+    - 3.0.35
+    recommended: 3.0.35
     deprecated: []
   dependencies:
   - name: com.unity.ext.nunit
@@ -919,7 +923,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.22
   source: 1
-  resolvedPath: /home/will/gamedev/Jupiter-Flyer/Library/PackageCache/com.unity.ide.visualstudio@8140e851d83e
+  resolvedPath: C:\Users\lunat\Downloads\thisBALL\Jupiter-Flyer\Library\PackageCache\com.unity.ide.visualstudio@8140e851d83e
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -1025,7 +1029,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.13.0
   source: 1
-  resolvedPath: /home/will/gamedev/Jupiter-Flyer/Library/PackageCache/com.unity.inputsystem@ea5ab5b33a26
+  resolvedPath: C:\Users\lunat\Downloads\thisBALL\Jupiter-Flyer\Library\PackageCache\com.unity.inputsystem@ea5ab5b33a26
   assetPath: Packages/com.unity.inputsystem
   name: com.unity.inputsystem
   displayName: Input System
@@ -1094,9 +1098,11 @@ m_ResolvedPackages:
     - 1.12.0
     - 1.13.0
     - 1.13.1
+    - 1.14.0
     compatible:
     - 1.13.0
     - 1.13.1
+    - 1.14.0
     recommended: 1.13.1
     deprecated: []
   dependencies:
@@ -1180,7 +1186,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.3.2
   source: 1
-  resolvedPath: /home/will/gamedev/Jupiter-Flyer/Library/PackageCache/com.unity.mathematics@8017b507cc74
+  resolvedPath: C:\Users\lunat\Downloads\thisBALL\Jupiter-Flyer\Library\PackageCache\com.unity.mathematics@8017b507cc74
   assetPath: Packages/com.unity.mathematics
   name: com.unity.mathematics
   displayName: Mathematics
@@ -1269,7 +1275,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/gamedev/Jupiter-Flyer/Library/PackageCache/com.unity.multiplayer.center@f5e57a8bed06
+  resolvedPath: C:\Users\lunat\Downloads\thisBALL\Jupiter-Flyer\Library\PackageCache\com.unity.multiplayer.center@f3fb577b3546
   assetPath: Packages/com.unity.multiplayer.center
   name: com.unity.multiplayer.center
   displayName: Multiplayer Center
@@ -1349,7 +1355,7 @@ m_ResolvedPackages:
   upmReserved: 
   assetStore:
     productId: 
-  fingerprint: f5e57a8bed0637672c58142b1bfd7e6fea03746c
+  fingerprint: f3fb577b3546594b97b8cc34307cd621f60f1c73
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
@@ -1359,7 +1365,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.11.4
   source: 1
-  resolvedPath: /home/will/gamedev/Jupiter-Flyer/Library/PackageCache/com.unity.nuget.mono-cecil@d6f9955a5d5f
+  resolvedPath: C:\Users\lunat\Downloads\thisBALL\Jupiter-Flyer\Library\PackageCache\com.unity.nuget.mono-cecil@d6f9955a5d5f
   assetPath: Packages/com.unity.nuget.mono-cecil
   name: com.unity.nuget.mono-cecil
   displayName: Mono Cecil
@@ -1441,7 +1447,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 6.0.4
   source: 1
-  resolvedPath: /home/will/gamedev/Jupiter-Flyer/Library/PackageCache/com.unity.probuilder@a2827f523e21
+  resolvedPath: C:\Users\lunat\Downloads\thisBALL\Jupiter-Flyer\Library\PackageCache\com.unity.probuilder@a2827f523e21
   assetPath: Packages/com.unity.probuilder
   name: com.unity.probuilder
   displayName: ProBuilder
@@ -1506,25 +1512,28 @@ m_ResolvedPackages:
     - 5.2.0
     - 5.2.2
     - 5.2.3
+    - 5.2.4
     - 6.0.1-pre.1
     - 6.0.1-pre.2
     - 6.0.1
     - 6.0.2
     - 6.0.3
     - 6.0.4
+    - 6.0.5
     compatible:
     - 6.0.4
-    recommended: 6.0.4
+    - 6.0.5
+    recommended: 6.0.5
     deprecated: []
   dependencies:
   - name: com.unity.shadergraph
     version: 17.0.2
-  - name: com.unity.settings-manager
-    version: 1.0.3
-  - name: com.unity.modules.physics
-    version: 1.0.0
   - name: com.unity.modules.imgui
     version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.settings-manager
+    version: 1.0.3
   resolvedDependencies:
   - name: com.unity.shadergraph
     version: 17.0.3
@@ -1593,7 +1602,7 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   entitlements:
-    licensingModel: 0
+    licensingModel: 1
   isAssetStorePackage: 0
   datePublishedTicks: 638621037625580000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.probuilder@6.0/manual/index.html
@@ -1630,7 +1639,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 17.0.3
   source: 2
-  resolvedPath: /home/will/gamedev/Jupiter-Flyer/Library/PackageCache/com.unity.render-pipelines.core@1fb57a2b8b78
+  resolvedPath: C:\Users\lunat\Downloads\thisBALL\Jupiter-Flyer\Library\PackageCache\com.unity.render-pipelines.core@38fdc9b96878
   assetPath: Packages/com.unity.render-pipelines.core
   name: com.unity.render-pipelines.core
   displayName: Core RP Library
@@ -1834,7 +1843,7 @@ m_ResolvedPackages:
   upmReserved: 
   assetStore:
     productId: 
-  fingerprint: 1fb57a2b8b786a134c34cadb049d13dc911e1e15
+  fingerprint: 38fdc9b96878a2e6f6c44f4e2f8a9e68f7b5ce46
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 17.0.3
@@ -1844,7 +1853,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 17.0.3
   source: 2
-  resolvedPath: /home/will/gamedev/Jupiter-Flyer/Library/PackageCache/com.unity.render-pipelines.universal@536216ab1428
+  resolvedPath: C:\Users\lunat\Downloads\thisBALL\Jupiter-Flyer\Library\PackageCache\com.unity.render-pipelines.universal@0b68ece7aa54
   assetPath: Packages/com.unity.render-pipelines.universal
   name: com.unity.render-pipelines.universal
   displayName: Universal RP
@@ -1996,7 +2005,7 @@ m_ResolvedPackages:
   upmReserved: 
   assetStore:
     productId: 
-  fingerprint: 536216ab14282dfe97b8f9091a4f6c8bcfe95ede
+  fingerprint: 0b68ece7aa543ec27fbe06e1a2da6f1265244813
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 17.0.3
@@ -2006,7 +2015,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 17.0.3
   source: 2
-  resolvedPath: /home/will/gamedev/Jupiter-Flyer/Library/PackageCache/com.unity.render-pipelines.universal-config@ae49062cc978
+  resolvedPath: C:\Users\lunat\Downloads\thisBALL\Jupiter-Flyer\Library\PackageCache\com.unity.render-pipelines.universal-config@fa63c96d3e1a
   assetPath: Packages/com.unity.render-pipelines.universal-config
   name: com.unity.render-pipelines.universal-config
   displayName: Universal RP Config
@@ -2094,7 +2103,7 @@ m_ResolvedPackages:
   upmReserved: 
   assetStore:
     productId: 
-  fingerprint: ae49062cc978b6d8906942c0f746974868ff489e
+  fingerprint: fa63c96d3e1af317d84d171cd6c0e0658ab159df
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 17.0.3
@@ -2104,7 +2113,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.1
   source: 2
-  resolvedPath: /home/will/gamedev/Jupiter-Flyer/Library/PackageCache/com.unity.rendering.light-transport@e291d2b283b1
+  resolvedPath: C:\Users\lunat\Downloads\thisBALL\Jupiter-Flyer\Library\PackageCache\com.unity.rendering.light-transport@307bc27a498f
   assetPath: Packages/com.unity.rendering.light-transport
   name: com.unity.rendering.light-transport
   displayName: Unity Light Transport Library
@@ -2190,7 +2199,7 @@ m_ResolvedPackages:
   upmReserved: 
   assetStore:
     productId: 
-  fingerprint: e291d2b283b1e98987c6f75d18149bc0eb1ee8bc
+  fingerprint: 307bc27a498fc9cd409bbd426c85d8dc7f140bc1
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.1
@@ -2200,7 +2209,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 17.0.3
   source: 2
-  resolvedPath: /home/will/gamedev/Jupiter-Flyer/Library/PackageCache/com.unity.shadergraph@0bc8d4840bc9
+  resolvedPath: C:\Users\lunat\Downloads\thisBALL\Jupiter-Flyer\Library\PackageCache\com.unity.shadergraph@afc42d8f5d23
   assetPath: Packages/com.unity.shadergraph
   name: com.unity.shadergraph
   displayName: Shader Graph
@@ -2393,7 +2402,7 @@ m_ResolvedPackages:
   upmReserved: 
   assetStore:
     productId: 
-  fingerprint: 0bc8d4840bc952d6e83c46e14e4a16bb9fd9e5fa
+  fingerprint: afc42d8f5d23516679001415ac5921fc5626e87e
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 17.0.3
@@ -2403,7 +2412,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.4.6
   source: 1
-  resolvedPath: /home/will/gamedev/Jupiter-Flyer/Library/PackageCache/com.unity.test-framework@5ac417e07314
+  resolvedPath: C:\Users\lunat\Downloads\thisBALL\Jupiter-Flyer\Library\PackageCache\com.unity.test-framework@5ac417e07314
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -2555,7 +2564,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 3.0.3
   source: 1
-  resolvedPath: /home/will/gamedev/Jupiter-Flyer/Library/PackageCache/com.unity.test-framework.performance@fb0dc592af8b
+  resolvedPath: C:\Users\lunat\Downloads\thisBALL\Jupiter-Flyer\Library\PackageCache\com.unity.test-framework.performance@fb0dc592af8b
   assetPath: Packages/com.unity.test-framework.performance
   name: com.unity.test-framework.performance
   displayName: Performance testing API
@@ -2690,7 +2699,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.8.7
   source: 1
-  resolvedPath: /home/will/gamedev/Jupiter-Flyer/Library/PackageCache/com.unity.timeline@c58b4ee65782
+  resolvedPath: C:\Users\lunat\Downloads\thisBALL\Jupiter-Flyer\Library\PackageCache\com.unity.timeline@c58b4ee65782
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -2876,7 +2885,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.0
   source: 2
-  resolvedPath: /home/will/gamedev/Jupiter-Flyer/Library/PackageCache/com.unity.ugui@95bb0390e44c
+  resolvedPath: C:\Users\lunat\Downloads\thisBALL\Jupiter-Flyer\Library\PackageCache\com.unity.ugui@03407c6d8751
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: Unity UI
@@ -2958,7 +2967,7 @@ m_ResolvedPackages:
   upmReserved: 
   assetStore:
     productId: 
-  fingerprint: 95bb0390e44ca96765f9b1e9907f417eb6fb06bc
+  fingerprint: 03407c6d875144b0a8ffdc0af3e0d5cccfa5a4ae
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 2.0.0
@@ -2968,7 +2977,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.9.5
   source: 1
-  resolvedPath: /home/will/gamedev/Jupiter-Flyer/Library/PackageCache/com.unity.visualscripting@1b53f46e931b
+  resolvedPath: C:\Users\lunat\Downloads\thisBALL\Jupiter-Flyer\Library\PackageCache\com.unity.visualscripting@1b53f46e931b
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting
@@ -3087,7 +3096,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.accessibility
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.accessibility
   assetPath: Packages/com.unity.modules.accessibility
   name: com.unity.modules.accessibility
   displayName: Accessibility
@@ -3154,7 +3163,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.ai
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.ai
   assetPath: Packages/com.unity.modules.ai
   name: com.unity.modules.ai
   displayName: AI
@@ -3221,7 +3230,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.androidjni
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.androidjni
   assetPath: Packages/com.unity.modules.androidjni
   name: com.unity.modules.androidjni
   displayName: Android JNI
@@ -3287,7 +3296,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.animation
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.animation
   assetPath: Packages/com.unity.modules.animation
   name: com.unity.modules.animation
   displayName: Animation
@@ -3354,7 +3363,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.assetbundle
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.assetbundle
   assetPath: Packages/com.unity.modules.assetbundle
   name: com.unity.modules.assetbundle
   displayName: Asset Bundle
@@ -3421,7 +3430,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.audio
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.audio
   assetPath: Packages/com.unity.modules.audio
   name: com.unity.modules.audio
   displayName: Audio
@@ -3488,7 +3497,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.cloth
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.cloth
   assetPath: Packages/com.unity.modules.cloth
   name: com.unity.modules.cloth
   displayName: Cloth
@@ -3559,7 +3568,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.director
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.director
   assetPath: Packages/com.unity.modules.director
   name: com.unity.modules.director
   displayName: Director
@@ -3634,7 +3643,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.hierarchycore
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.hierarchycore
   assetPath: Packages/com.unity.modules.hierarchycore
   name: com.unity.modules.hierarchycore
   displayName: Hierarchy Core
@@ -3701,7 +3710,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.imageconversion
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.imageconversion
   assetPath: Packages/com.unity.modules.imageconversion
   name: com.unity.modules.imageconversion
   displayName: Image Conversion
@@ -3768,7 +3777,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.imgui
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.imgui
   assetPath: Packages/com.unity.modules.imgui
   name: com.unity.modules.imgui
   displayName: IMGUI
@@ -3835,7 +3844,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.jsonserialize
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.jsonserialize
   assetPath: Packages/com.unity.modules.jsonserialize
   name: com.unity.modules.jsonserialize
   displayName: JSONSerialize
@@ -3902,7 +3911,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.particlesystem
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.particlesystem
   assetPath: Packages/com.unity.modules.particlesystem
   name: com.unity.modules.particlesystem
   displayName: Particle System
@@ -3969,7 +3978,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.physics
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.physics
   assetPath: Packages/com.unity.modules.physics
   name: com.unity.modules.physics
   displayName: Physics
@@ -4036,7 +4045,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.physics2d
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.physics2d
   assetPath: Packages/com.unity.modules.physics2d
   name: com.unity.modules.physics2d
   displayName: Physics 2D
@@ -4103,7 +4112,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.screencapture
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.screencapture
   assetPath: Packages/com.unity.modules.screencapture
   name: com.unity.modules.screencapture
   displayName: Screen Capture
@@ -4174,7 +4183,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.subsystems
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.subsystems
   assetPath: Packages/com.unity.modules.subsystems
   name: com.unity.modules.subsystems
   displayName: Subsystems
@@ -4245,7 +4254,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.terrain
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.terrain
   assetPath: Packages/com.unity.modules.terrain
   name: com.unity.modules.terrain
   displayName: Terrain
@@ -4312,7 +4321,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.terrainphysics
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.terrainphysics
   assetPath: Packages/com.unity.modules.terrainphysics
   name: com.unity.modules.terrainphysics
   displayName: Terrain Physics
@@ -4387,7 +4396,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.tilemap
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.tilemap
   assetPath: Packages/com.unity.modules.tilemap
   name: com.unity.modules.tilemap
   displayName: Tilemap
@@ -4457,7 +4466,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.ui
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.ui
   assetPath: Packages/com.unity.modules.ui
   name: com.unity.modules.ui
   displayName: UI
@@ -4524,7 +4533,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.uielements
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.uielements
   assetPath: Packages/com.unity.modules.uielements
   name: com.unity.modules.uielements
   displayName: UIElements
@@ -4607,7 +4616,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.umbra
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.umbra
   assetPath: Packages/com.unity.modules.umbra
   name: com.unity.modules.umbra
   displayName: Umbra
@@ -4674,7 +4683,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.unityanalytics
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unityanalytics
   assetPath: Packages/com.unity.modules.unityanalytics
   name: com.unity.modules.unityanalytics
   displayName: Unity Analytics
@@ -4748,7 +4757,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequest
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequest
   assetPath: Packages/com.unity.modules.unitywebrequest
   name: com.unity.modules.unitywebrequest
   displayName: Unity Web Request
@@ -4815,7 +4824,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequestassetbundle
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestassetbundle
   assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
   name: com.unity.modules.unitywebrequestassetbundle
   displayName: Unity Web Request Asset Bundle
@@ -4890,7 +4899,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequestaudio
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestaudio
   assetPath: Packages/com.unity.modules.unitywebrequestaudio
   name: com.unity.modules.unitywebrequestaudio
   displayName: Unity Web Request Audio
@@ -4965,7 +4974,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequesttexture
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequesttexture
   assetPath: Packages/com.unity.modules.unitywebrequesttexture
   name: com.unity.modules.unitywebrequesttexture
   displayName: Unity Web Request Texture
@@ -5040,7 +5049,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequestwww
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestwww
   assetPath: Packages/com.unity.modules.unitywebrequestwww
   name: com.unity.modules.unitywebrequestwww
   displayName: Unity Web Request WWW
@@ -5131,7 +5140,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.vehicles
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.vehicles
   assetPath: Packages/com.unity.modules.vehicles
   name: com.unity.modules.vehicles
   displayName: Vehicles
@@ -5202,7 +5211,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.video
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.video
   assetPath: Packages/com.unity.modules.video
   name: com.unity.modules.video
   displayName: Video
@@ -5281,7 +5290,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.vr
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.vr
   assetPath: Packages/com.unity.modules.vr
   name: com.unity.modules.vr
   displayName: VR
@@ -5362,7 +5371,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.wind
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.wind
   assetPath: Packages/com.unity.modules.wind
   name: com.unity.modules.wind
   displayName: Wind
@@ -5429,7 +5438,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /home/will/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.xr
+  resolvedPath: A:\Unity\6000.0.39f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.xr
   assetPath: Packages/com.unity.modules.xr
   name: com.unity.modules.xr
   displayName: XR
@@ -5508,7 +5517,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 4.9.3
   source: 1
-  resolvedPath: /home/will/gamedev/Jupiter-Flyer/Library/PackageCache/com.unity.searcher@1e17ce91558d
+  resolvedPath: C:\Users\lunat\Downloads\thisBALL\Jupiter-Flyer\Library\PackageCache\com.unity.searcher@1e17ce91558d
   assetPath: Packages/com.unity.searcher
   name: com.unity.searcher
   displayName: Searcher
@@ -5595,7 +5604,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.0.1
   source: 1
-  resolvedPath: /home/will/gamedev/Jupiter-Flyer/Library/PackageCache/com.unity.settings-manager@56a930affa1e
+  resolvedPath: C:\Users\lunat\Downloads\thisBALL\Jupiter-Flyer\Library\PackageCache\com.unity.settings-manager@56a930affa1e
   assetPath: Packages/com.unity.settings-manager
   name: com.unity.settings-manager
   displayName: Settings Manager
@@ -5664,4 +5673,4 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 2.0.1
     minimumUnityVersion: 2018.4.0a1
-m_BuiltInPackagesHash: 6b37dde20c258157a9b9626403e7f8eccf47d9ba
+m_BuiltInPackagesHash: 0031b9ac4f335bf62e122297073e12e552291172
