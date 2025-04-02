@@ -59,12 +59,12 @@ public class PlayerController : MonoBehaviour {
         rb.AddForce(movement * speed, ForceMode.Acceleration);
 
 		// Jump if space is pressed and the ball is on the ground
-        if (Input.GetKey(KeyCode.Space) && isGrounded)
-        {
-			rb.linearVelocity = new Vector3(rb.linearVelocity.x, rb.linearVelocity.y + jumpForce, rb.linearVelocity.z);
-            //rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            isGrounded = false; // Prevent double jumping
-        }
+        // if (Input.GetKey(KeyCode.Space) && isGrounded)
+        // {
+		// 	rb.linearVelocity = new Vector3(rb.linearVelocity.x, rb.linearVelocity.y + jumpForce, rb.linearVelocity.z);
+        //     //rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        //     isGrounded = false; // Prevent double jumping
+        // }
     }
 
 	// When this game object intersects a collider with 'is trigger' checked, 

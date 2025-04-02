@@ -33,7 +33,7 @@ public class Shooter : MonoBehaviour
         {
             //rb.AddForce(Vector3.up * launchForce, ForceMode.Impulse); // Shoot into space
             Vector3 shootDirection = camera.forward; // Shoot in the direction the camera is facing
-            rb.linearVelocity = (shootDirection * 2000); // Shoot with a specific speed
+            rb.linearVelocity = (shootDirection * launchSpeed); // Shoot with a specific speed
         }
         else
         {

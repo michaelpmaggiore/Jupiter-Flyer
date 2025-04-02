@@ -2,66 +2,58 @@
 
 public class CameraController : MonoBehaviour
 {
-    public Transform player;  // Assign your ball (or player) in the Inspector
-    public float sensitivity = 3.0f; // Mouse sensitivity (adjust as needed)
-    public float minPitch = -30f;    // Lower limit for vertical rotation
-    public float maxPitch = 60f;     // Upper limit for vertical rotation
+    [Tooltip("The target (player or ball) that the camera will follow.")]
+    public Transform player;
+    
+    [Tooltip("Mouse sensitivity for camera rotation.")]
+    public float sensitivity = 3.0f;
+    
+    [Tooltip("Distance from the player.")]
+    public float distance = 10f;
 
-    private float yaw = 0f;   // Horizontal rotation angle
-    private float pitch = 0f; // Vertical rotation angle
-    private Vector3 initialOffset; // The starting offset between the camera and the player
+    private float yaw = 0f;   // Horizontal rotation angle.
+    private float pitch = 0f; // Vertical rotation angle.
 
     void Start()
     {
-        // Ensure the player transform is assigned
         if (player == null)
         {
             Debug.LogError("Player transform is not assigned in the CameraController!");
             return;
         }
 
-        // Calculate the initial offset from the player to the camera
-        initialOffset = transform.position - player.position;
-        
-        // Make inital offset zero
-        //initialOffset = Vector3.zero;
-        
-        // Optionally, initialize yaw and pitch based on current camera rotation
+        // Initialize yaw and pitch from the current camera rotation.
         yaw = transform.eulerAngles.y;
         pitch = transform.eulerAngles.x;
 
-        // Lock and hide the cursor so the mouse controls the camera
+        // Lock and hide the cursor for camera control.
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
     void LateUpdate()
     {
-        // Ensure we have a player assigned
         if (player == null)
             return;
 
-        // Get mouse input from the horizontal and vertical axes
+        // Get mouse input.
         float mouseX = Input.GetAxis("Mouse X") * sensitivity;
         float mouseY = Input.GetAxis("Mouse Y") * sensitivity;
 
-        // Update rotation angles (yaw rotates horizontally, pitch rotates vertically)
+        // Update yaw and pitch directly.
         yaw += mouseX;
-        pitch = Mathf.Clamp(pitch - mouseY, minPitch, maxPitch);
+        pitch -= mouseY;  // Inverting mouseY so that moving the mouse upward raises the view
 
-        // Create a rotation from the yaw and pitch
+        // Compute the desired rotation based on yaw and pitch.
         Quaternion rotation = Quaternion.Euler(pitch, yaw, 0);
 
-        // Rotate the initial offset by this rotation and add it to the player's position.
-        Vector3 desiredPosition = player.position + rotation * initialOffset;
+        // Calculate the offset behind the player at the given distance.
+        Vector3 offset = rotation * new Vector3(0, 0, -distance);
 
-        // Update the camera position so it follows the player with the rotated offset.
-        transform.position = desiredPosition;
+        // Set the camera's position relative to the player's position.
+        transform.position = player.position + offset;
 
-        // Make the camera look at the player.
-        transform.LookAt(player.position);
-
-        // Debug logs (optional, remove in production)
-        // Debug.Log("Yaw: " + yaw + " | Pitch: " + pitch + " | Desired Pos: " + desiredPosition);
+        // Set the camera's rotation.
+        transform.rotation = rotation;
     }
 }
