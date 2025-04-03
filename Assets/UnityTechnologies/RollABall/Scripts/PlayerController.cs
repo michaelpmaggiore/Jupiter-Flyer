@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour {
     [Tooltip("Rocket sound effect AudioClip.")]
     public AudioClip rocketSound;
 
+	public GameObject rocketThrusterImage;
+
 	// Create private references to the rigidbody component on the player, and the count of pick up objects picked up so far
 	private Rigidbody rb;
 	private int count;
@@ -65,11 +67,11 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.W))
 		{
     		// Start playing the rocket sound on loop when W is first pressed.
-    		if (audioSource != null && rocketSound != null)
-    		{
-        		audioSource.loop = true;  // Ensure looping is enabled.
-        		audioSource.Play();
-    		}
+        	audioSource.loop = true;  // Ensure looping is enabled.
+        	audioSource.Play();
+    		
+			rocketThrusterImage.SetActive(true);
+        
 		}
 
 		if (Input.GetKey(KeyCode.W))
@@ -81,10 +83,9 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetKeyUp(KeyCode.W))
 		{
     		// Stop playing the rocket sound when W is released.
-    		if (audioSource != null && audioSource.isPlaying)
-    		{
-        		audioSource.Stop();
-    		}
+    		audioSource.Stop();
+			rocketThrusterImage.SetActive(false);
+    		
 		}
 
 		//Jump if space is pressed and the ball is on the ground

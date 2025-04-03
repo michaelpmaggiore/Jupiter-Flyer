@@ -6,7 +6,36 @@ public class GrapplingGun2 : MonoBehaviour
     private Vector3 grapplePoint;
     public LayerMask whatIsGrappleable;
     public Transform camera, player;
+
+    [Tooltip("AudioSource component to play the rocket sound.")]
+    public AudioSource audioSource;
+    
+    [Tooltip("Rocket sound effect AudioClip.")]
+    public AudioClip rocketSound;
+
+
     private SpringJoint joint;
+
+    // At the start of the game..
+	void Start ()
+	{
+
+		if (audioSource == null)
+        {
+            audioSource = GetComponent<AudioSource>();
+        }
+        
+        // Ensure the AudioSource is set up correctly.
+        if (audioSource != null && rocketSound != null)
+        {
+            audioSource.clip = rocketSound;
+            audioSource.loop = false;
+        }
+        else
+        {
+            Debug.LogWarning("AudioSource or RocketSound AudioClip is missing!");
+        }
+	}
 
     void Awake()
     {
@@ -20,6 +49,8 @@ public class GrapplingGun2 : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             StartGrapple();
+            audioSource.loop = false;  // Ensure looping is enabled.
+            audioSource.Play();
         }
         else if (Input.GetMouseButtonUp(0))
         {

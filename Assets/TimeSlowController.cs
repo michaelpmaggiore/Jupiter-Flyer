@@ -11,13 +11,26 @@ public class TimeSlowController : MonoBehaviour
     [Tooltip("Speed at which time scale transitions.")]
     public float transitionSpeed = 5.0f;
 
+    [Tooltip("Sound effect to play when slowing down.")]
+    public AudioClip slowdownSound;
+    
+    [Tooltip("Sound effect to play when speeding up.")]
+    public AudioClip speedupSound;
+
+    private AudioSource audioSource;
     private float targetTimeScale;
     private bool slowModeActive = false;
-    private bool spaceReleased = true;
+    private bool keyReleased = true;
 
     private void Start()
     {
         targetTimeScale = normalTimeScale;
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            Debug.LogWarning("AudioSource not found on this GameObject. Please add one to play sound effects.");
+        }
+        audioSource.pitch = 2.0f;
     }
 
     private void Update()
@@ -25,37 +38,56 @@ public class TimeSlowController : MonoBehaviour
         // If left-click is pressed, reset to normal speed immediately.
         if (Input.GetMouseButtonDown(0))
         {
-            slowModeActive = false;
+            if (slowModeActive)
+            {
+                slowModeActive = false;
+                PlaySpeedupSound();
+            }
         }
 
-        // Check for space key input:
-        // Only engage slow mode if space is freshly pressed (i.e., after being released).
-        if (Input.GetKeyDown(KeyCode.D) && spaceReleased)
+        // Toggle slow mode with the D key (only if the key was released previously).
+        if (Input.GetKeyDown(KeyCode.D) && keyReleased)
         {
             if (slowModeActive)
             {
                 slowModeActive = false;
+                PlaySpeedupSound();
             }
             else
             {
                 slowModeActive = true;
+                PlaySlowdownSound();
             }
-            spaceReleased = false;
+            keyReleased = false;
         }
 
-        // When space is released, allow it to trigger slow mode again.
+        // Reset the keyReleased flag when D is released.
         if (Input.GetKeyUp(KeyCode.D))
         {
-            spaceReleased = true;
+            keyReleased = true;
         }
 
         // Set the target time scale based on slow mode status.
         targetTimeScale = slowModeActive ? slowTimeScale : normalTimeScale;
-
-        // Smoothly transition the time scale for a gradual effect.
-        Time.timeScale = Mathf.Lerp(Time.timeScale, targetTimeScale, Time.unscaledDeltaTime * transitionSpeed);
         
-        // Adjust fixedDeltaTime to keep physics stable.
+        // Smoothly transition the time scale.
+        Time.timeScale = Mathf.Lerp(Time.timeScale, targetTimeScale, Time.unscaledDeltaTime * transitionSpeed);
         Time.fixedDeltaTime = 0.02f * Time.timeScale;
+    }
+
+    private void PlaySlowdownSound()
+    {
+        if (audioSource != null && slowdownSound != null)
+        {
+            audioSource.PlayOneShot(slowdownSound);
+        }
+    }
+
+    private void PlaySpeedupSound()
+    {
+        if (audioSource != null && speedupSound != null)
+        {
+            audioSource.PlayOneShot(speedupSound);
+        }
     }
 }
