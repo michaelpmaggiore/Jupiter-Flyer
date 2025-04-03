@@ -67,6 +67,7 @@
     <Compile Include="Assets/Menu/Scripts/Menu_Controller.cs" />
     <Compile Include="Assets/UnityTechnologies/RollABall/Scripts/CameraController.cs" />
     <Compile Include="Assets/BuilletDestroyer.cs" />
+    <Compile Include="Assets/DestroyBullet.cs" />
     <Compile Include="Assets/UnityTechnologies/RollABall/Scripts/PlayerController.cs" />
     <Compile Include="Assets/Menu/Scripts/Music_Player.cs" />
     <Compile Include="Assets/Menu/Scripts/Escape_Menu.cs" />

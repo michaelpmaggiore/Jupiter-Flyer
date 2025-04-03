@@ -7,6 +7,7 @@ public class Shooter : MonoBehaviour
     public float launchSpeed; // Adjust force for better effect
     public Transform camera;
     public Rigidbody playerRigidbody;
+    public float lifetime = 5f; // Lifetime of the projectile
 
     [Tooltip("AudioSource component to play the rocket sound.")]
     public AudioSource audioSource;
@@ -56,6 +57,7 @@ public class Shooter : MonoBehaviour
 
         // Spawn the projectile at the spawn position (or use the ball's position)
         GameObject projectile = Instantiate(projectilePrefab, spawnPoint.position, Quaternion.identity);
+        Destroy(projectile, lifetime);
 
         // Add Rigidbody to the projectile
         Rigidbody rb = projectile.GetComponent<Rigidbody>();
