@@ -10,8 +10,14 @@ public class PlayerController : MonoBehaviour {
 	// Create public variables for player speed, and for the Text UI game objects
 	public float speed;
 	public Text countText;
-	public Text winText;
+	//public Text winText;
 	public Transform camera;
+
+	[Tooltip("AudioSource component to play the rocket sound.")]
+    public AudioSource audioSource;
+    
+    [Tooltip("Rocket sound effect AudioClip.")]
+    public AudioClip rocketSound;
 
 	// Create private references to the rigidbody component on the player, and the count of pick up objects picked up so far
 	private Rigidbody rb;
@@ -33,23 +39,58 @@ public class PlayerController : MonoBehaviour {
 		SetCountText ();
 
 		// Set the text property of our Win Text UI to an empty string, making the 'You Win' (game over message) blank
-		winText.text = "";
+		//winText.text = "";
+
+		if (audioSource == null)
+        {
+            audioSource = GetComponent<AudioSource>();
+        }
+        
+        // Ensure the AudioSource is set up correctly.
+        if (audioSource != null && rocketSound != null)
+        {
+            audioSource.clip = rocketSound;
+            audioSource.loop = false;
+        }
+        else
+        {
+            Debug.LogWarning("AudioSource or RocketSound AudioClip is missing!");
+        }
 	}
 
 	// Each physics step..
 	private void FixedUpdate()
     {
 
+		if (Input.GetKeyDown(KeyCode.W))
+		{
+    		// Start playing the rocket sound on loop when W is first pressed.
+    		if (audioSource != null && rocketSound != null)
+    		{
+        		audioSource.loop = true;  // Ensure looping is enabled.
+        		audioSource.Play();
+    		}
+		}
+
 		if (Input.GetKey(KeyCode.W))
-        {
-        	rb.AddForce(camera.forward * speed, ForceMode.Acceleration);
-        }
+		{
+    		// Apply force to the ball.
+    		rb.AddForce(Camera.main.transform.forward * speed, ForceMode.Acceleration);
+		}		
+
+		if (Input.GetKeyUp(KeyCode.W))
+		{
+    		// Stop playing the rocket sound when W is released.
+    		if (audioSource != null && audioSource.isPlaying)
+    		{
+        		audioSource.Stop();
+    		}
+		}
 
 		//Jump if space is pressed and the ball is on the ground
         if (Input.GetKey(KeyCode.Space) && isGrounded)
         {
 			rb.linearVelocity = new Vector3(rb.linearVelocity.x, rb.linearVelocity.y + jumpForce, rb.linearVelocity.z);
-            //rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isGrounded = false; // Prevent double jumping
         }
     }
@@ -76,14 +117,14 @@ public class PlayerController : MonoBehaviour {
 	void SetCountText()
 	{
 		// Update the text field of our 'countText' variable
-		countText.text = "Count: " + count.ToString ();
+		// countText.text = "Count: " + count.ToString ();
 
-		// Check if our 'count' is equal to or exceeded 12
-		if (count >= 12) 
-		{
-			// Set the text value of our 'winText'
-			winText.text = "You Win!";
-		}
+		// // Check if our 'count' is equal to or exceeded 12
+		// if (count >= 12) 
+		// {
+		// 	// Set the text value of our 'winText'
+		// 	winText.text = "You Win!";
+		// }
 	}
 
 	// Detect ground contact

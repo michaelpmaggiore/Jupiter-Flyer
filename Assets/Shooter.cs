@@ -8,6 +8,33 @@ public class Shooter : MonoBehaviour
     public Transform camera;
     public Rigidbody playerRigidbody;
 
+    [Tooltip("AudioSource component to play the rocket sound.")]
+    public AudioSource audioSource;
+    
+    [Tooltip("Rocket sound effect AudioClip.")]
+    public AudioClip rocketSound;
+
+    // At the start of the game..
+	void Start ()
+	{
+
+		if (audioSource == null)
+        {
+            audioSource = GetComponent<AudioSource>();
+        }
+        
+        // Ensure the AudioSource is set up correctly.
+        if (audioSource != null && rocketSound != null)
+        {
+            audioSource.clip = rocketSound;
+            audioSource.loop = false;
+        }
+        else
+        {
+            Debug.LogWarning("AudioSource or RocketSound AudioClip is missing!");
+        }
+	}
+
     private void Update()
     {
         if (Input.GetMouseButtonDown(1)) // Right-click to shoot
@@ -23,6 +50,9 @@ public class Shooter : MonoBehaviour
             Debug.LogError("Projectile Prefab is not assigned!");
             return;
         }
+
+        audioSource.loop = false;  // Ensure looping is enabled.
+        audioSource.Play();
 
         // Spawn the projectile at the spawn position (or use the ball's position)
         GameObject projectile = Instantiate(projectilePrefab, spawnPoint.position, Quaternion.identity);
