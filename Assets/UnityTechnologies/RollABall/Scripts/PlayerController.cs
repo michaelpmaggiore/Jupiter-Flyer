@@ -39,32 +39,19 @@ public class PlayerController : MonoBehaviour {
 	// Each physics step..
 	private void FixedUpdate()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
 
-        // Get camera directions
-        Vector3 camForward = camera.forward;
-        Vector3 camRight = camera.right;
+		if (Input.GetKey(KeyCode.W))
+        {
+        	rb.AddForce(camera.forward * speed, ForceMode.Acceleration);
+        }
 
-        // Flatten the vectors to prevent unwanted vertical movement
-        camForward.y = 0;
-        camRight.y = 0;
-        camForward.Normalize();
-        camRight.Normalize();
-
-        // Calculate movement direction relative to camera
-        Vector3 movement = (camForward * moveVertical + camRight * moveHorizontal).normalized;
-
-        // Apply force to roll the ball
-        rb.AddForce(movement * speed, ForceMode.Acceleration);
-
-		// Jump if space is pressed and the ball is on the ground
-        // if (Input.GetKey(KeyCode.Space) && isGrounded)
-        // {
-		// 	rb.linearVelocity = new Vector3(rb.linearVelocity.x, rb.linearVelocity.y + jumpForce, rb.linearVelocity.z);
-        //     //rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-        //     isGrounded = false; // Prevent double jumping
-        // }
+		//Jump if space is pressed and the ball is on the ground
+        if (Input.GetKey(KeyCode.Space) && isGrounded)
+        {
+			rb.linearVelocity = new Vector3(rb.linearVelocity.x, rb.linearVelocity.y + jumpForce, rb.linearVelocity.z);
+            //rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            isGrounded = false; // Prevent double jumping
+        }
     }
 
 	// When this game object intersects a collider with 'is trigger' checked, 

@@ -30,7 +30,7 @@ public class TimeSlowController : MonoBehaviour
 
         // Check for space key input:
         // Only engage slow mode if space is freshly pressed (i.e., after being released).
-        if (Input.GetKeyDown(KeyCode.Space) && spaceReleased)
+        if (Input.GetKeyDown(KeyCode.D) && spaceReleased)
         {
             if (slowModeActive)
             {
@@ -44,7 +44,7 @@ public class TimeSlowController : MonoBehaviour
         }
 
         // When space is released, allow it to trigger slow mode again.
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetKeyUp(KeyCode.D))
         {
             spaceReleased = true;
         }
