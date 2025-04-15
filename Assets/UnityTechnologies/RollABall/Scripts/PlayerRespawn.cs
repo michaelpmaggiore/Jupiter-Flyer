@@ -76,7 +76,7 @@ public class PlayerDeathAndRespawn : MonoBehaviour
         if (currentLives <= 0)
         {
             textObject.gameObject.SetActive(true);
-            textObject.text = "You lose! Game restarting...";
+            textObject.text = "You lose!";
             // e.g. reload the scene after a short pause:
             yield return new WaitForSeconds(respawnDelay);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

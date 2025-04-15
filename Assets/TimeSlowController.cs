@@ -17,7 +17,8 @@ public class TimeSlowController : MonoBehaviour
     [Tooltip("Sound effect to play when speeding up.")]
     public AudioClip speedupSound;
 
-    private AudioSource audioSource;
+
+    public AudioSource audioSource;
     private float targetTimeScale;
     private bool slowModeActive = false;
     private bool keyReleased = true;
@@ -25,11 +26,11 @@ public class TimeSlowController : MonoBehaviour
     private void Start()
     {
         targetTimeScale = normalTimeScale;
-        audioSource = GetComponent<AudioSource>();
-        if (audioSource == null)
-        {
-            Debug.LogWarning("AudioSource not found on this GameObject. Please add one to play sound effects.");
-        }
+        //audioSource = GetComponent<AudioSource>();
+        // if (audioSource == null)
+        // {
+        //     Debug.LogWarning("AudioSource not found on this GameObject. Please add one to play sound effects.");
+        // }
         audioSource.pitch = 2.0f;
     }
 
