@@ -17,12 +17,13 @@ public class ShowTextOnEnter3D : MonoBehaviour
             textObject.SetActive(true);
         }
     }
+    
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            textObject.SetActive(false);
-        }
-    }
+    // private void OnTriggerExit(Collider other)
+    // {
+    //     if (other.CompareTag("Player"))
+    //     {
+    //         textObject.SetActive(false);
+    //     }
+    // }
 }
