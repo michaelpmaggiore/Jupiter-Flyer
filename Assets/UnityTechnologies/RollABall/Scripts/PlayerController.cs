@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour {
     [Tooltip("Rocket sound effect AudioClip.")]
     public AudioClip rocketSound;
 
-	public GameObject rocketThrusterImage;
+	//public GameObject rocketThrusterImage;
 
 	// Create private references to the rigidbody component on the player, and the count of pick up objects picked up so far
 	private Rigidbody rb;
@@ -27,6 +27,9 @@ public class PlayerController : MonoBehaviour {
 
 	private bool isGrounded = false;
 	public float jumpForce = 50000f; // Adjust for higher/lower jumps
+
+	private Color thrustColor = Color.red;
+	private Renderer renderer;
 
 	// At the start of the game..
 	void Start ()
@@ -40,13 +43,15 @@ public class PlayerController : MonoBehaviour {
 		// Run the SetCountText function to update the UI (see below)
 		SetCountText ();
 
+		renderer = GetComponent<Renderer>();
+
 		// Set the text property of our Win Text UI to an empty string, making the 'You Win' (game over message) blank
 		//winText.text = "";
 
-		if (audioSource == null)
-        {
-            audioSource = GetComponent<AudioSource>();
-        }
+		// if (audioSource == null)
+        // {
+        //     audioSource = GetComponent<AudioSource>();
+        // }
         
         // Ensure the AudioSource is set up correctly.
         if (audioSource != null && rocketSound != null)
@@ -70,7 +75,9 @@ public class PlayerController : MonoBehaviour {
         	audioSource.loop = true;  // Ensure looping is enabled.
         	audioSource.Play();
     		
-			rocketThrusterImage.SetActive(true);
+			//rocketThrusterImage.SetActive(true);
+			// Change the color of the object to indicate thrust
+			renderer.material.color = thrustColor;
         
 		}
 
@@ -84,7 +91,9 @@ public class PlayerController : MonoBehaviour {
 		{
     		// Stop playing the rocket sound when W is released.
     		audioSource.Stop();
-			rocketThrusterImage.SetActive(false);
+			//rocketThrusterImage.SetActive(false);
+			// Reset the color of the object to its original color
+			renderer.material.color = Color.white;
     		
 		}
 
