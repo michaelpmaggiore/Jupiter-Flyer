@@ -9,30 +9,25 @@ public class Shooter : MonoBehaviour
     public Rigidbody playerRigidbody;
     public float lifetime = 5f; // Lifetime of the projectile
 
-    [Tooltip("AudioSource component to play the rocket sound.")]
+    [Tooltip("AudioSource component to play the laser sound.")]
     public AudioSource audioSource;
     
-    [Tooltip("Rocket sound effect AudioClip.")]
-    public AudioClip rocketSound;
+    [Tooltip("Laser sound effect AudioClip.")]
+    public AudioClip laserSound;
 
     // At the start of the game..
 	void Start ()
 	{
-
-		if (audioSource == null)
-        {
-            audioSource = GetComponent<AudioSource>();
-        }
         
         // Ensure the AudioSource is set up correctly.
-        if (audioSource != null && rocketSound != null)
+        if (audioSource != null && laserSound != null)
         {
-            audioSource.clip = rocketSound;
+            audioSource.clip = laserSound;
             audioSource.loop = false;
         }
         else
         {
-            Debug.LogWarning("AudioSource or RocketSound AudioClip is missing!");
+            Debug.LogWarning("AudioSource or LaserSound AudioClip is missing!");
         }
 	}
 

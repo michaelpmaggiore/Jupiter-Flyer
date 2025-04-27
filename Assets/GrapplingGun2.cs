@@ -11,7 +11,7 @@ public class GrapplingGun2 : MonoBehaviour
     public AudioSource audioSource;
     
     [Tooltip("Rocket sound effect AudioClip.")]
-    public AudioClip rocketSound;
+    public AudioClip grappleSound;
 
 
     private SpringJoint joint;
@@ -26,10 +26,10 @@ public class GrapplingGun2 : MonoBehaviour
         }
         
         // Ensure the AudioSource is set up correctly.
-        if (audioSource != null && rocketSound != null)
+        if (audioSource != null && grappleSound != null)
         {
-            audioSource.clip = rocketSound;
-            audioSource.loop = false;
+            audioSource.clip = grappleSound;
+            audioSource.loop = true;
         }
         else
         {
@@ -49,8 +49,6 @@ public class GrapplingGun2 : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             StartGrapple();
-            audioSource.loop = false;  // Ensure looping is enabled.
-            audioSource.Play();
         }
         else if (Input.GetMouseButtonUp(0))
         {
@@ -83,6 +81,7 @@ public class GrapplingGun2 : MonoBehaviour
             lr.positionCount = 2;
             lr.SetPosition(0, player.position);
             lr.SetPosition(1, grapplePoint);
+            audioSource.Play();
         }
     }
 
@@ -97,6 +96,7 @@ public class GrapplingGun2 : MonoBehaviour
     {
         lr.positionCount = 0;
         Destroy(joint);
+        audioSource.Stop();
     }
 
     void LateUpdate() {
