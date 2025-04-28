@@ -58,8 +58,10 @@ public class PlayerDeathAndRespawn : MonoBehaviour
     {
         // --- 1) Explosion VFX/SFX
         if (explosionPrefab != null)
-            Instantiate(explosionPrefab, transform.position, Quaternion.identity);
-
+        {
+            GameObject explosion = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+            Destroy(explosion, 3.0f);
+        }
         // --- 2) Disable player visuals & physics
         var rend = GetComponent<Renderer>();
         if (rend != null) rend.enabled = false;

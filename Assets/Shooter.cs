@@ -39,6 +39,35 @@ public class Shooter : MonoBehaviour
         }
     }
 
+    //private void Shoot()
+    //{
+    //    if (projectilePrefab == null)
+    //    {
+    //        Debug.LogError("Projectile Prefab is not assigned!");
+    //        return;
+    //    }
+
+    //    audioSource.loop = false;  // Ensure looping is enabled.
+    //    audioSource.Play();
+
+    //    // Spawn the projectile at the spawn position (or use the ball's position)
+    //    GameObject projectile = Instantiate(projectilePrefab, spawnPoint.position, Quaternion.identity);
+    //    Destroy(projectile, lifetime);
+
+    //    // Add Rigidbody to the projectile
+    //    Rigidbody rb = projectile.GetComponent<Rigidbody>();
+    //    if (rb != null)
+    //    {
+    //        //rb.AddForce(Vector3.up * launchForce, ForceMode.Impulse); // Shoot into space
+    //        Vector3 shootDirection = camera.forward; // Shoot in the direction the camera is facing
+    //        rb.linearVelocity = (shootDirection * launchSpeed); // Shoot with a specific speed
+    //    }
+    //    else
+    //    {
+    //        Debug.LogError("Projectile does not have a Rigidbody!");
+    //    }
+    //}
+
     private void Shoot()
     {
         if (projectilePrefab == null)
@@ -47,24 +76,26 @@ public class Shooter : MonoBehaviour
             return;
         }
 
-        audioSource.loop = false;  // Ensure looping is enabled.
+        audioSource.loop = false;
         audioSource.Play();
 
-        // Spawn the projectile at the spawn position (or use the ball's position)
         GameObject projectile = Instantiate(projectilePrefab, spawnPoint.position, Quaternion.identity);
         Destroy(projectile, lifetime);
 
-        // Add Rigidbody to the projectile
-        Rigidbody rb = projectile.GetComponent<Rigidbody>();
-        if (rb != null)
+        // Move manually instead of using Rigidbody
+        BulletMovement bm = projectile.GetComponent<BulletMovement>();
+        if (bm != null)
         {
-            //rb.AddForce(Vector3.up * launchForce, ForceMode.Impulse); // Shoot into space
-            Vector3 shootDirection = camera.forward; // Shoot in the direction the camera is facing
-            rb.linearVelocity = (shootDirection * launchSpeed); // Shoot with a specific speed
+            Vector3 shootDirection = camera.forward.normalized;
+            Vector3 inheritedVelocity = playerRigidbody != null ? playerRigidbody.linearVelocity : Vector3.zero;
+
+           // bm.velocity = inheritedVelocity + shootDirection * launchSpeed; 
+            bm.velocity = shootDirection * launchSpeed;
         }
         else
         {
-            Debug.LogError("Projectile does not have a Rigidbody!");
+            Debug.LogError("Projectile does not have a BulletMovement script!");
         }
     }
+
 }

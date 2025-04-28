@@ -61,6 +61,7 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\SpaceStationHealth.cs" />
     <Compile Include="Assets\Menu\Scripts\Menu_Controller.cs" />
     <Compile Include="Assets\BlackHole\Scripts\BlackHoleCamera.cs" />
     <Compile Include="Assets\UnityTechnologies\RollABall\Scripts\CameraController.cs" />
@@ -69,10 +70,12 @@
     <Compile Include="Assets\DestroyBullet.cs" />
     <Compile Include="Assets\BlackHole\Scripts\MouseOrbit.cs" />
     <Compile Include="Assets\BlackHole\Scripts\AsteroidRotation.cs" />
+    <Compile Include="Assets\SpaceStationMarker.cs" />
     <Compile Include="Assets\UnityTechnologies\RollABall\Scripts\PlayerController.cs" />
     <Compile Include="Assets\UnityTechnologies\RollABall\Scripts\ShowTextOnEnter3D.cs" />
     <Compile Include="Assets\Menu\Scripts\Music_Player.cs" />
     <Compile Include="Assets\Menu\Scripts\Escape_Menu.cs" />
+    <Compile Include="Assets\AsteroidCollision.cs" />
     <Compile Include="Assets\SpaceSkies Free\Demo\Scripts\LookCamera.cs" />
     <Compile Include="Assets\SpeedTrail.cs" />
     <Compile Include="Assets\GrapplingGun2.cs" />
@@ -80,14 +83,18 @@
     <Compile Include="Assets\BlackHole\Scripts\BlackHoleRenderer.cs" />
     <Compile Include="Assets\GrapplingGun.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\BulletMovement.cs" />
     <Compile Include="Assets\BlackHole\Scripts\AutoBehaviour.cs" />
     <Compile Include="Assets\BlackHole\Scripts\LookAt.cs" />
+    <Compile Include="Assets\AsteroidMarker.cs" />
     <Compile Include="Assets\DynamicSpeedTrail.cs" />
     <Compile Include="Assets\UnityTechnologies\RollABall\Scripts\Rotator.cs" />
     <Compile Include="Assets\TimeSlowController.cs" />
     <Compile Include="Assets\Menu\Scripts\Sound_Controller.cs" />
     <Compile Include="Assets\SpaceSkies Free\Demo\Scripts\SkyboxChanger.cs" />
     <Compile Include="Assets\UnityTechnologies\RollABall\Scripts\PlayerRespawn.cs" />
+    <Compile Include="Assets\HomingAsteroid.cs" />
+    <Compile Include="Assets\AsteroidSpawner.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
