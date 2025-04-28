@@ -54,6 +54,11 @@ public class AsteroidSpawner : MonoBehaviour
         Quaternion randomRotation = Random.rotation;
 
         GameObject newAsteroid = Instantiate(asteroidPrefab, spawnPosition, randomRotation);
+        Renderer renderer = newAsteroid.GetComponent<Renderer>();
+        if (renderer != null)
+        {
+            renderer.enabled = true;
+        }
 
         Rigidbody rb = newAsteroid.GetComponent<Rigidbody>();
         if (rb != null)
