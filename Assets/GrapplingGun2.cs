@@ -27,6 +27,7 @@ public class GrapplingGun2 : MonoBehaviour
         {
             audioSource.clip = grappleSound;
             audioSource.loop = true;
+            audioSource.volume = 0.5f;
         }
         else
         {

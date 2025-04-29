@@ -43,17 +43,22 @@ public class PlayerController : MonoBehaviour {
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
         {
             audioSource.Play();
             meshRenderer.material = boostMaterial;
         }
-
-        if (Input.GetKeyUp(KeyCode.W))
+        else
         {
             audioSource.Stop();
             meshRenderer.material = normalMaterial;
         }
+
+        //if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
+        //{
+        //    audioSource.Stop();
+        //    meshRenderer.material = normalMaterial;
+        //}
     }
 
     private void FixedUpdate()
@@ -61,6 +66,18 @@ public class PlayerController : MonoBehaviour {
         if (Input.GetKey(KeyCode.W))
         {
             rb.AddForce(Camera.main.transform.forward * speed, ForceMode.Acceleration);
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            rb.AddForce(Camera.main.transform.forward * speed * -1, ForceMode.Acceleration);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            rb.AddForce(Camera.main.transform.right * speed * -1, ForceMode.Acceleration);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            rb.AddForce(Camera.main.transform.right * speed, ForceMode.Acceleration);
         }
     }
 

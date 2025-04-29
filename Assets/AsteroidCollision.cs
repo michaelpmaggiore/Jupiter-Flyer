@@ -33,7 +33,14 @@ public class AsteroidCollision : MonoBehaviour
         if (asteroid != null)
         {
             // We hit an asteroid!
-            audioSource.Play();
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+        
+
+            // Increment AsteroidShockwave
+            AsteroidShockwave.Instance.AddAsteroid();
 
             // Spawn explosion effect if assigned
             if (explosionPrefab != null)

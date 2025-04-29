@@ -12,8 +12,14 @@ public class AsteroidSpawner : MonoBehaviour
     [Tooltip("How far from the target asteroids spawn.")]
     public float spawnRadius = 100f;
 
-    [Tooltip("How often to spawn asteroids (seconds).")]
-    public float spawnInterval = 2f;
+    [Tooltip("Initial time between spawns (seconds).")]
+    public float initialSpawnInterval = 2f;
+
+    [Tooltip("Minimum spawn interval (can't go faster than this).")]
+    public float minSpawnInterval = 0.2f;
+
+    [Tooltip("How fast the spawn interval decreases (seconds per second).")]
+    public float spawnAccelerationRate = 0.05f; // seconds decrease per second
 
     [Tooltip("How many asteroids per spawn burst.")]
     public int asteroidsPerSpawn = 1;
@@ -26,6 +32,12 @@ public class AsteroidSpawner : MonoBehaviour
     public float randomSpreadAngle = 10f;
 
     private float spawnTimer = 0f;
+    private float currentSpawnInterval;
+
+    private void Start()
+    {
+        currentSpawnInterval = initialSpawnInterval;
+    }
 
     private void Update()
     {
@@ -34,7 +46,7 @@ public class AsteroidSpawner : MonoBehaviour
 
         spawnTimer += Time.deltaTime;
 
-        if (spawnTimer >= spawnInterval)
+        if (spawnTimer >= currentSpawnInterval)
         {
             for (int i = 0; i < asteroidsPerSpawn; i++)
             {
@@ -42,18 +54,22 @@ public class AsteroidSpawner : MonoBehaviour
             }
             spawnTimer = 0f;
         }
+
+        // Gradually decrease spawn interval over time
+        currentSpawnInterval -= spawnAccelerationRate * Time.deltaTime;
+        currentSpawnInterval = Mathf.Max(currentSpawnInterval, minSpawnInterval);
     }
 
     private void SpawnSingleAsteroid()
     {
-        // Choose a random spawn position on a sphere around the target
         Vector3 randomOffset = Random.onUnitSphere * spawnRadius;
         Vector3 spawnPosition = target.position + randomOffset;
+        Debug.Log("Spawning asteroid. Spawn Interval = " + currentSpawnInterval);
 
-        // Random orientation
         Quaternion randomRotation = Random.rotation;
 
         GameObject newAsteroid = Instantiate(asteroidPrefab, spawnPosition, randomRotation);
+
         Renderer renderer = newAsteroid.GetComponent<Renderer>();
         if (renderer != null)
         {
