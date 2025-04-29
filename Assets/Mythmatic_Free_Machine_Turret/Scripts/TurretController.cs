@@ -18,6 +18,13 @@ using System.Linq;
         public float attackTime = 40f; // Time active before deactivation
     public float shootingDelay = 1f; // Time between shots
 
+    public Material normalMaterial;
+    public Material glowMaterial;
+
+    private Renderer[] renderers;
+
+    private bool isGlowing = true;
+
 
         // Aiming & Rotation
         public float baseRotationSpeed = 180f;
@@ -64,10 +71,12 @@ using System.Linq;
 
         private void Start()
         {
-            //Activate(); // temporary for testing
+        //Activate(); // temporary for testing
 
-            // Ensure the AudioSources are set up correctly.
-            if (shootingAudioSource != null && laserSound != null)
+        renderers = GetComponentsInChildren<Renderer>();
+
+        // Ensure the AudioSources are set up correctly.
+        if (shootingAudioSource != null && laserSound != null)
             {
                 shootingAudioSource.clip = laserSound;
                 shootingAudioSource.loop = false;
@@ -81,7 +90,7 @@ using System.Linq;
             {
                 startupAudioSource.clip = startupSound;
                 startupAudioSource.loop = false;
-                startupAudioSource.volume = 2f; // Adjust volume as needed
+                startupAudioSource.volume = 0.1f; // Adjust volume as needed
             }
             else
             {
@@ -106,6 +115,8 @@ using System.Linq;
             timeLeftShooting = attackTime;
             startupAudioSource.Play();
         FindObjectOfType<ActiveTurretCount>()?.TurretActivated();
+        ToggleGlow();
+
 
     }
 
@@ -115,6 +126,7 @@ using System.Linq;
         isActive = false;
         shutdownAudioSource.Play();
         FindObjectOfType<ActiveTurretCount>()?.TurretDeactivated();
+        ToggleGlow();
 
     }
 
@@ -301,5 +313,22 @@ using System.Linq;
             {
                 isWeaponRotating = false;
             }
-        }     
+        }
+
+    public void ToggleGlow()
+    {
+        isGlowing = !isGlowing;
+
+        foreach (Renderer rend in renderers)
+        {
+            // Replace all materials with the selected one
+            // If the object has multiple material slots, apply the same one to all
+            Material[] newMats = new Material[rend.materials.Length];
+            for (int i = 0; i < newMats.Length; i++)
+            {
+                newMats[i] = isGlowing ? glowMaterial : normalMaterial;
+            }
+            rend.materials = newMats;
+        }
     }
+}

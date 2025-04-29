@@ -35,7 +35,7 @@ public class ActiveTurretCount : MonoBehaviour
         if (turretCountText != null)
         {
             //turretCountText.text = "active turrets: " + activeTurrets + " / " + totalTurrets;
-            turretCountText.text = activeTurrets + " active turrets";
+            turretCountText.text = activeTurrets + "/" + totalTurrets + " active turrets";
         }
         else
         {
