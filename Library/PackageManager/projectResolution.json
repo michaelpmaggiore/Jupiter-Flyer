@@ -9,6 +9,16 @@
     "C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.39f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\BuiltInPackagesCombined.sha1"
   ],
   "outputs": {
+    "com.unity.2d.sprite@1.0.0": {
+      "name": "com.unity.2d.sprite",
+      "displayName": "2D Sprite",
+      "resolvedPath": "C:\\Users\\wjwar\\Jupiter-Flyer\\Library\\PackageCache\\com.unity.2d.sprite@072d7bd355e5",
+      "fingerprint": "072d7bd355e55ee3ded20a6a52435a4f5fded0d8",
+      "editorCompatibility": "2019.2.0a1",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
     "com.unity.ai.navigation@2.0.6": {
       "name": "com.unity.ai.navigation",
       "displayName": "AI Navigation",
